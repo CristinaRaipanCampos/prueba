@@ -21,9 +21,9 @@
 
 <body>
   <!-- barra de nav estatica -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-      <div>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container navbar">
+      <div class="navbar">
         <img src="assets/img/viajes.svg" alt="icono-nav" width="20px">
         <a class="navbar-brand" href="#">Viajes Chile</a>
       </div>
@@ -35,15 +35,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#inicio">Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-1">
             <a class="nav-link" href="#quienes-somos">Quienes somos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-1">
             <a class="nav-link" href="#destacados">Destacados</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-1">
             <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
@@ -51,17 +51,17 @@
     </div>
   </nav>
   <!-- carrusel de imagenes -->
-  <section class="container-fluid">
+  <section id="inicio" class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="imagen1">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" height="700px" alt="imagen1">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="imagen2">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" height="700px" alt="imagen2">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="imagen3">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" height="700px" alt="imagen3">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -78,39 +78,39 @@
   </section>
   <!-- Section quienes somos (card iconos e info)  -->
   <section id="quienes-somos" class="container d-none d-md-block py-3">
-    <h2>QUINES SOMOS</h2>
     <div class="container text-center py-5">
+      <h2 id="titulos">¿QUIENES SOMOS?</h2>
       <div id="linea" class="row"></div>
     </div>
     <div class="row">
       <div class="col-12 col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <i class="fas fa-plane"></i>
+        <div class="card cont-quienes">
+          <div class="card-header ico-quienes">
+            <i class="fas fa-plane ico-quienes"></i>
           </div>
-          <div class="card-body">
+          <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-body">
+        <div class="card cont-quienes">
+          <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           </div>
-          <div class="card-header">
-            <i class="fas fa-mountain"></i>
+          <div class="card-header ico-quienes">
+            <i class="fas fa-mountain ico-quienes"></i>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <i class="fas fa-route"></i>
+        <div class="card cont-quienes">
+          <div class="card-header ico-quienes">
+            <i class="fas fa-route ico-quienes"></i>
           </div>
-          <div class="card-body">
+          <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           </div>
@@ -120,13 +120,14 @@
   </section>
   <!-- Section de destacados (cards con imagenes)  -->
   <section id="destacados" class="container py-3">
-    <h2>DESTACADOS</h2>
-    <div class="container">
+
+    <div class="container text-center py-5">
+      <h2 id="titulos">DESTACADOS</h2>
       <div id="linea" class="row"></div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-3 col-lg-3">
-        <div class="card h-100">
+      <div class="col-12 col-md-3 col-lg-3 py-2">
+        <div id="tarjeta" class="card h-100">
           <div class="ratio ratio-4x3">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
           </div>
@@ -136,8 +137,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3 col-lg-3">
-        <div class="card h-100">
+      <div class="col-12 col-md-3 col-lg-3 py-2">
+        <div id="tarjeta" class="card h-100">
           <div class="ratio ratio-4x3">
             <img src="assets/img/card2.jpg" class="card-img" alt="...">
           </div>
@@ -147,8 +148,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3 col-lg-3">
-        <div class="card h-100">
+      <div class="col-12 col-md-3 col-lg-3 py-2">
+        <div id="tarjeta" class="card h-100">
           <div class="ratio ratio-4x3">
             <img src="assets/img/card3.jpg" class="card-img" alt="...">
           </div>
@@ -158,8 +159,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3 col-lg-3">
-        <div class="card h-100">
+      <div class="col-12 col-md-3 col-lg-3 py-2">
+        <div id="tarjeta" class="card h-100">
           <div class="ratio ratio-4x3">
             <img src="assets/img/card4.jpg" class="card-img" alt="...">
           </div>
@@ -173,8 +174,8 @@
   </section>
   <!-- section formulario  -->
   <section id="contacto" class="container">
-    <h2>CONTACTO</h2>
-    <div class="container">
+    <div class="container text-center py-5">
+      <h2 id="titulos">CONTACTO</h2>
       <div id="linea" class="row"></div>
     </div>
     <form>
@@ -189,28 +190,28 @@
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Mensaje</label>
         <textarea class="form-control" style="height: 100px"></textarea>
-
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button id="boton-form" type="button" class="btn btn-primary my-3" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" title="Presione para enviar">Enviar</button>
     </form>
   </section>
   <!-- Section footer  -->
-  <section class="container">
-    <footer>
-      <div class="row">
-        <div class="col-6 col-md-6 col-lg6">
-          <p>VIAJES CHILE</p>
-        </div>
-        <div class="col-6 col-md-6 col-lg6">
-          <a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-        </div>
+  <footer>
+    <div class="row">
+      <div class="col-6 col-md-6 col-lg6 pie">
+        <p class="pie-info">VIAJES CHILE</p>
       </div>
-    </footer>
-  </section>
-
-
+      <div class="col-6 col-md-6 col-lg6 pie">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Enlace Jquery version 3.6.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--Enlace JavaScript de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

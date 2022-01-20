@@ -1,0 +1,78 @@
+html{
+    scroll-behavior: auto !important;
+}
+/* Modifica todo dentro del body */
+body{
+    background-color: #000;
+    
+}
+*{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+/* modifica los titulos */
+#titulos, .pie-info{
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+}
+/* modifica linea divisoria */
+#linea{
+    border-bottom: 1px solid #141318;
+    padding-top: 10px;
+}
+/* Modifica el nav */
+.navbar{
+    background: #239DA8;
+    color: #ffffff;
+}
+
+/* Modifica section quienes-somos */
+#quienes-somos{
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.ico-quienes{
+    background-color: #0CCAEF;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+.info-quienes{
+    color: #ffffff;
+    font-family: 'roboto' sans-serif;
+    background-color: #000;
+   
+}
+.cont-quienes{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+}
+/* modifica section destacados */
+#tarjeta{
+    margin-right: 10px;
+    border: none;
+    background-color: #0DCAF0;
+    color: #ffffff;
+    font-family: 'roboto' sans-serif;
+}
+/* modifica el formulario */
+#boton-form{
+    background-color: #13C5EB;
+    width: 50px;
+}
+/* modifica el footer */
+footer{
+    background-color: #0DCAF0;
+}
+.pie{
+    text-align: center;
+    padding-top: 15px;
+    color: #ffffff;
+}
+.form-label{
+    color: #ffffff;
+    font-family: 'roboto' sans-serif;
+
+}

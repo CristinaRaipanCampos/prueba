@@ -90,7 +90,9 @@
           </div>
           <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure a aliquid vero cumque,
+              reprehenderit libero culpa ea inventore. Beatae voluptas maiores delectus. Expedita vitae necessitatibus
+              suscipit, officiis fuga corporis cum.</p>
           </div>
         </div>
       </div>
@@ -98,7 +100,9 @@
         <div class="card cont-quienes">
           <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus
+              perspiciatis, debitis aspernatur expedita aliquid modi totam, enim labore earum delectus corrupti adipisci
+              voluptates ex eum beatae libero, voluptate distinctio!</p>
           </div>
           <div class="card-header ico-quienes">
             <i class="fas fa-mountain ico-quienes"></i>
@@ -112,7 +116,9 @@
           </div>
           <div class="card-body info-quienes">
             <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus omnis ipsum
+              quis minima exercitationem unde non doloremque. Cum saepe nihil aperiam facilis, rerum magnam praesentium
+              iste vel quidem totam?</p>
           </div>
         </div>
       </div>
@@ -181,22 +187,25 @@
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Escriba su nombre">
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Asunto</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Escriba algun titulo">
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Mensaje</label>
-        <textarea class="form-control" style="height: 100px"></textarea>
-        <button id="boton-form" type="button" class="btn btn-primary my-3" data-bs-toggle="tooltip"
-          data-bs-placement="bottom" title="Presione para enviar">Enviar</button>
+        <textarea class="form-control" style="height: 100px" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          title="Escriba su mensaje"></textarea>
+        <button id="boton-form" type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Enviar</button>
     </form>
   </section>
   <!-- Section footer  -->
   <footer>
-    <div class="row">
+    <div id="pie-todo" class="row">
       <div class="col-6 col-md-6 col-lg6 pie">
         <p class="pie-info">VIAJES CHILE</p>
       </div>
@@ -208,6 +217,28 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <section class="container">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button id="cerrar" type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Enlace Jquery version 3.6.0 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

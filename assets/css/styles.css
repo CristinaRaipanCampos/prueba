@@ -66,6 +66,9 @@ body{
 footer{
     background-color: #0DCAF0;
 }
+#pie-todo{
+    margin-right: 0px;
+}
 .pie{
     text-align: center;
     padding-top: 15px;

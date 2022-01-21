@@ -25,7 +25,7 @@
     <div class="container navbar">
       <div class="navbar">
         <img src="assets/img/viajes.svg" alt="icono-nav" width="20px">
-        <a class="navbar-brand" href="#">Viajes Chile</a>
+        <a class="navbar-brand" href="#inicio">Viajes Chile</a>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -187,12 +187,12 @@
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <input type="email" class="form-control" id="nombre" aria-describedby="emailHelp"
           data-bs-toggle="tooltip" data-bs-placement="top" title="Escriba su nombre">
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Asunto</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label  for="exampleInputEmail1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="asunto" aria-describedby="emailHelp"
           data-bs-toggle="tooltip" data-bs-placement="top" title="Escriba algun titulo">
       </div>
       <div class="mb-3">
@@ -223,16 +223,19 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div id="content-header" class="modal-header px-2">
+            
+            <h5 class="modal-title" id="exampleModalLabel">Mensaje enviado</h5>
+            <img src="assets/img/viajes.svg" alt="icono-nav" width="30px" class="modal-title px2">
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body px-2">
+            <p>
+              Señor <span id="mostrarNombre"></span> su mensaje con asunto <span id="mostrarAsunto"></span> fue enviado con exito. <br>
+              Gracias por sus comentarios.
+            </p>
           </div>
-          <div class="modal-footer">
-            <button id="cerrar" type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div id="content-footer" class="modal-footer px-2">
+            <button id="cerrar" type="button" class="btn btn-light" style="width: 55px;" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>

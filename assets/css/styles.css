@@ -58,6 +58,12 @@ body{
     font-family: 'roboto' sans-serif;
 }
 /* modifica el formulario */
+#content-header, #content-footer{
+    background-color: #0DCAF0;
+    font-family: 'roboto' sans-serif;
+    color: #ffffff;
+}
+
 #boton-form{
     background-color: #13C5EB;
     width: 50px;
